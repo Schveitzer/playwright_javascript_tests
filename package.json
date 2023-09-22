@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "regression": "npx playwright test",
-    "chrome": "npx playwright test --project=chromium"
+    "chrome": "npx playwright test --project=chrome",
+    "firefox": "npx playwright test --project=firefox",
+    "safari": "npx playwright test --project=safari"
   },
   "keywords": [],
   "author": "",
