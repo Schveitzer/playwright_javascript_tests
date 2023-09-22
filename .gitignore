@@ -1,5 +1,6 @@
 # Result Folder
 test-results
+playwright-report
 
 # Logs
 logs
