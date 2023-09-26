@@ -1,6 +1,9 @@
 # Result Folder
 test-results
 playwright-report
+state.json
+.auth
+
 
 # Logs
 logs
