@@ -3,6 +3,7 @@ test-results
 playwright-report
 state.json
 .auth
+.vscode
 
 
 # Logs
