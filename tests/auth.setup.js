@@ -4,9 +4,12 @@ import {credentials} from '../utils/test_data/credentials.js'
 
 
 // TODO: Join all authentication perform in one function with for()
+// TODO: Add conditional, if already logged in don´t perform login.
+
+// More about authentication see https://playwright.dev/docs/auth
 
 // Perform authentication and save state for regular user
-setup('authenticate as regular user', async ({ browser }) => {
+setup(' @Setup authenticate as regular user', async ({ browser }) => {
     // Perform authentication steps.
     const context = await browser.newContext();
     const page = await context.newPage();
@@ -34,7 +37,7 @@ setup('authenticate as regular user', async ({ browser }) => {
 
 
 // Perform authentication and save state for regular user
-setup('authenticate as problem user', async ({ browser }) => {
+setup(' @ Setup authenticate as problem user', async ({ browser }) => {
     // Perform authentication steps.
     const context = await browser.newContext();
     const page = await context.newPage();

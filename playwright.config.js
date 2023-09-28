@@ -32,10 +32,13 @@ module.exports = defineConfig({
   },
 
   /* Configure projects for major browsers */
+  /* Every project depends on the execution of the setup script that performs 
+  the login and saves the storage state files, 
+  more information about authentication see https://playwright.dev/docs/auth  */
   projects: [
     {
       name: 'setup',
-      testMatch: '**/*.setup.ts',
+      testMatch: '**/*.setup.js',
     },
     {
       name: 'chrome',
@@ -60,7 +63,7 @@ module.exports = defineConfig({
 
         browserName: 'firefox',
         headless: true,
-        screenshot: 'off',
+        screenshot: 'on',
         trace: 'retain-on-failure',//off,on 
         //...devices['iPhone 11'],
       }
@@ -73,7 +76,7 @@ module.exports = defineConfig({
 
         browserName: 'webkit',
         headless: true,
-        screenshot: 'off',
+        screenshot: 'on',
         trace: 'retain-on-failure',//off,on 
         //...devices['iPhone 11'],
       }
