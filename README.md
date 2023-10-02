@@ -69,7 +69,7 @@ $ npm run safari
 $ npx playwright test --project=chrome --<parameter>
 ```
 
-## To run with playwright tags, for example tests ho have Web tag
+## To run with playwright tags, for example tests with Web tag
 ```bash
 $ npx playwright test --grep @Web --project=chrome
 ```
