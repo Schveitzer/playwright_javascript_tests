@@ -217,6 +217,8 @@ $ npm run debug
 ## Trace viewer
 If any test fail, the trace file is attach in the report, for see and debug with the trace just click on file in report:
 
+![Trace viewer](img/trace_viwer.gif)
+
 ## Report
 
 After runing tests is possible see report, for this run:
@@ -225,4 +227,4 @@ After runing tests is possible see report, for this run:
 $ npm run open report
 ```
 
-![Trace viewer](img/trace_viwer.gif)
+![Trace viewer](img/report.png)
