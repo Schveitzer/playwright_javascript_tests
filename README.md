@@ -14,6 +14,7 @@ This project includes:
     - Authenticated test sessions with signed states
     - Test setup
     - PageObject Pattern
+    - Tag test for excecution
     - Intercepting page requests (Network Events)
     - Mock page requests
     - Screenshot on fail and attach to report
@@ -66,6 +67,11 @@ $ npm run safari
 ## To run with playwright params
 ```bash
 $ npx playwright test --project=chrome --<parameter>
+```
+
+## To run with playwright tags, for example tests ho have Web tag
+```bash
+$ npx playwright test --grep @Web --project=chrome
 ```
 
 ## Tests with multiple browser instances (contexts) and multiple pages
