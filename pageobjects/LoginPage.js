@@ -1,6 +1,10 @@
 export class LoginPage {
 
-    constructor(page){
+    /**
+    * @param {import('playwright').Page} page
+    */
+
+    constructor(page) {
         this.page = page;
         this.usernameFiled = page.getByTestId("username");
         this.passwordField = page.getByTestId("password");
@@ -8,12 +12,12 @@ export class LoginPage {
 
     }
 
-    async goToLoginHome(){
+    async goToLoginHome() {
         await this.page.goto("/");
-        
+
     }
 
-    async doLogin(username, password){
+    async doLogin(username, password) {
         await this.goToLoginHome();
         await this.usernameFiled.fill(username);
         await this.passwordField.fill(password);

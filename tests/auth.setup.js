@@ -9,7 +9,7 @@ import {POManager} from '../pageobjects/POManager.js'
 // More about authentication see https://playwright.dev/docs/auth
 
 // Perform authentication and save state for regular user
-
+// Using PageObject Pattern
 setup(' @Setup authenticate as regular user', async ({ page }) => {
     // Perform authentication steps.
     const poManager = new POManager(page);
@@ -30,6 +30,7 @@ setup(' @Setup authenticate as regular user', async ({ page }) => {
 
 
 // Perform authentication and save state for regular user
+// Without using PageObject Pattern
 setup(' @ Setup authenticate as problem user', async ({ page }) => {
     // Perform authentication steps.
     await page.goto("/");

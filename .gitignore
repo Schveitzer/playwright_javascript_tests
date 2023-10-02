@@ -4,6 +4,7 @@ playwright-report
 state.json
 .auth
 .vscode
+/.DS_store
 
 
 # Logs

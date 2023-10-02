@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "regression": "npx playwright test",
+    "tests": "npx playwright test",
     "chrome": "npx playwright test --project=chrome",
     "firefox": "npx playwright test --project=firefox",
-    "safari": "npx playwright test --project=safari"
+    "safari": "npx playwright test --project=safari",
+    "open report": "npx playwright show-report",
+    "debug": "npx playwright test --project=chrome --debug",
+    "ui": "npx playwright test --project=chrome --ui"
   },
   "keywords": [],
   "author": "",

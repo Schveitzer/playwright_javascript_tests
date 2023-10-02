@@ -11,6 +11,7 @@ const { defineConfig, devices } = require('@playwright/test');
  * @see https://playwright.dev/docs/test-configuration
  */
 module.exports = defineConfig({
+  timeout: 20 * 1000,
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -46,7 +47,7 @@ module.exports = defineConfig({
       use: {
         browserName: 'chromium',
         headless: false,
-        screenshot: 'on',
+        screenshot: 'only-on-failure',
         video: 'off', //retain-on-failure
         ignoreHttpsErrors: true,
         permissions: ['geolocation'],
@@ -63,7 +64,7 @@ module.exports = defineConfig({
 
         browserName: 'firefox',
         headless: true,
-        screenshot: 'on',
+        screenshot: 'only-on-failure',
         trace: 'retain-on-failure',//off,on 
         //...devices['iPhone 11'],
       }
@@ -76,7 +77,7 @@ module.exports = defineConfig({
 
         browserName: 'webkit',
         headless: true,
-        screenshot: 'on',
+        screenshot: 'only-on-failure',
         trace: 'retain-on-failure',//off,on 
         //...devices['iPhone 11'],
       }

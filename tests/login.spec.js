@@ -33,4 +33,9 @@ test.describe(' @Problem_user tests with problem user',() => {
 
   })
 
+  test(' @Web test will fail to demonstrate the screenshot and trace file attached to the report ', async () => {
+    await homePage.goToHomePage();
+    await expect(homeLogo).toBeHidden();
+  })
+
 });
